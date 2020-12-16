@@ -5,6 +5,8 @@
 // this program should work on cuda 3.x enabled devices (kelper architechture)? really depends on if you have thrust with the cuda version installed
 // this version of thrust also has issues...
 
+// BE SURE YOU ARE COMPILLING WITH C++17   <-- ELSE A HOST_VECTOR SIZE OF 5 OR MORE WILL INVOKE A EXCEPTION FOR THE THRUST RUNTIME LIBRARY 
+ 
 #include "cuda_runtime.h" // standart cuda include
 #include "device_launch_parameters.h" // standart cuda include
 #include <stdio.h> // for printf - since it is predictable and scanf since it is supported by cuda 11.0
